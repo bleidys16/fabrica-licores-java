@@ -61,7 +61,7 @@ public class FabricaLicores {
             return;
         }
         if (edad < 18) {
-            System.out.println("Acceso denegado: solo se permite la venta a mayores de 18 años.");
+            System.out.println("Acceso denegado: solo se permite la venta a mayores de 18 anios.");
             return;
         }
 

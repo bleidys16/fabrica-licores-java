@@ -1,46 +1,28 @@
-# Fabrica de Licores
+# Fábrica de Licores
 
-Sistema de consola para probar ventas e inventario de una fabrica de licores. No requiere dependencias adicionales.
+Sistema de consola (Java) para ventas e inventario de una fábrica de licores.
+Los datos (nombres, precios y stock) son simulados. No requiere dependencias.
+Proyecto de la EA2 - Programación Orientada a Objetos, IU Digital de Antioquia.
 
-## Probar el programa
+## Cómo ejecutarlo
 
-Se necesita Java 8 o posterior. Comprueba que Java este disponible con:
+Se necesita el JDK de Java 8 o posterior. Comprueba con:
 
-```text
-java -version
-```
+    javac -version
 
-Desde la carpeta del proyecto, ejecuta el paquete incluido:
+Desde la carpeta del proyecto:
 
-```text
-java -jar FabricaLicores.jar
-```
+    javac -encoding UTF-8 FabricaLicores.java
+    java FabricaLicores
 
-El menu permite entrar al modulo Cliente, al modulo Administrador o salir. El inventario es simulado y vuelve a sus valores iniciales cuando se reinicia el programa.
+También se puede abrir `FabricaLicores.java` en un IDE (VS Code, IntelliJ,
+NetBeans) y pulsar Run.
+
+## Uso
+
+El menú permite entrar al módulo Cliente, al módulo Administrador o salir.
+El inventario vuelve a sus valores iniciales cada vez que se reinicia.
 
 ## Archivos
 
-- `FabricaLicores.jar`: aplicacion ejecutable, compilada para Java 8 o posterior.
-- `FabricaLicores.java`: codigo fuente.
-
-Para compartirlo, envia el JAR y este README. El otro equipo no necesita instalar un compilador, pero si debe tener Java instalado.
-
-## Reconstruir el JAR
-
-Se necesita un JDK 9 o posterior. En PowerShell:
-
-```powershell
-New-Item -ItemType Directory -Force build | Out-Null
-javac --release 8 -encoding UTF-8 -d build FabricaLicores.java
-jar --create --file FabricaLicores.jar --main-class FabricaLicores -C build .
-```
-
-En macOS o Linux:
-
-```sh
-mkdir -p build
-javac --release 8 -encoding UTF-8 -d build FabricaLicores.java
-jar --create --file FabricaLicores.jar --main-class FabricaLicores -C build .
-```
-
-`--release 8` hace que el programa pueda ejecutarse con Java 8, aunque se compile usando una version mas nueva del JDK.
+- `FabricaLicores.java`: código fuente.
